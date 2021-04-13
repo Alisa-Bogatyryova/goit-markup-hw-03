@@ -343,7 +343,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
   border: none;
-
   background: var(--button-background-color);
   border-radius: 4px;
 }
@@ -374,7 +373,7 @@ img {
   min-width: 100%;
 }
 .menu-card {
-  border: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .card-menu-item {
   flex-basis: calc(100%-60px / 3);
