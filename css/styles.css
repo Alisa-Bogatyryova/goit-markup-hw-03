@@ -4,8 +4,9 @@
   --button-color: #2196f3;
   --white-color: #ffffff;
   --background-color: #2f303a;
-  --sec-background-color: #e5e5e5;
+  --sec-background-color: #f5f4fa;
   --button-background-color: #f5f4fa;
+  --border-color: #eeeeee;
 }
 body {
   color: var(--primary-color);
@@ -64,9 +65,11 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+.nav-menu {
+  display: flex;
+}
 
 .navigation {
-  display: flex;
   align-items: center;
   padding: 32px 0;
   color: var(--secondary-color);
@@ -82,20 +85,19 @@ img {
 .nav-item:last-child {
   margin-right: 0;
 }
-.link :hover {
-  color: var(--button-color);
+/*Ссылки*/
+.link {
+  text-decoration: none;
+  font-style: normal;
 }
+.link :hover,
 .link :focus {
   color: var(--button-color);
 }
 .header {
   border-bottom: 1px solid #ececec;
 }
-/*Ссылки*/
-a.link {
-  text-decoration: none;
-  font-style: normal;
-}
+
 /*Контакты*/
 .contacts {
   font-weight: 500;
@@ -112,6 +114,9 @@ a.link {
 }
 /*Заголовок*/
 .title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -153,7 +158,7 @@ a.link {
 }
 
 .first-section {
-  padding: 200px 252px;
+  padding: 200px 0;
 }
 .main-section {
   display: block;
@@ -306,16 +311,20 @@ img {
 .footer {
   min-width: 1200px;
   background-color: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .address-list {
   display: inline;
 }
 .logo-position {
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .address-position {
-  padding-bottom: 60px;
+  margin-bottom: 9px;
+}
+.address-position:last-child {
+  margin-bottom: 0;
 }
 .address {
   font-size: 14px;
@@ -351,13 +360,13 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--secondary-color);
+  margin-bottom: 4px;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-color);
-  margin-top: 4px;
 }
 .filter {
   display: flex;
@@ -372,9 +381,6 @@ img {
   flex-wrap: wrap;
   min-width: 100%;
 }
-.menu-card {
-  border-bottom: 1px solid #eeeeee;
-}
 .card-menu-item {
   flex-basis: calc(100%-60px / 3);
   margin-right: 30px;
@@ -384,7 +390,8 @@ img {
   margin-right: 0;
   margin-bottom: 0;
 }
-
 .card-text {
   background-color: var(--white-color);
+  padding: 20px 24px;
+  border: 1px solid var(--border-color);
 }
